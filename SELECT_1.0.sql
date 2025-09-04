@@ -28,4 +28,7 @@ WHERE name NOT LIKE '% %' AND name NOT LIKE '%-%' AND name NOT LIKE '%/%';
 поэтому поставил пробелы,т.к. слово с маленькой буквы может быть либо в середине текста,либо в конце*/
 SELECT track_name
 FROM track
-WHERE track_name LIKE '% мой %' OR track_name LIKE '% my %' OR track_name LIKE '% my' OR track_name LIKE '% мой';
+WHERE track_name ILIKE'% my %' OR track_name ILIKE '% my %' 
+OR track_name ILIKE '% my' OR track_name ILIKE '% мой'
+OR track_name ILIKE 'my %' OR track_name ILIKE 'мой %'
+OR track_name ILIKE 'my' OR track_name ILIKE 'мой';
