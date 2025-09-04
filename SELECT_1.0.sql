@@ -6,7 +6,7 @@ WHERE duration=(
 	FROM track);
 
 
-/* реки,больше 3,5 минут */
+/* треки,дольше 3,5 минут */
 SELECT track_name
 FROM track
 WHERE duration>=time'00:03:30';
