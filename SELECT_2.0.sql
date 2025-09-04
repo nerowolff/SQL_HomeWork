@@ -38,7 +38,7 @@ WHERE performer.name NOT IN (
 
 
 /* Названия сборников, в которых присутствует исполнитель Led Zeppelin */
-SELECT mix.name
+SELECT DISTINCT(mix.name)
 FROM mix
 INNER JOIN mix_track
 ON mix_track.mix_id=mix.id 
